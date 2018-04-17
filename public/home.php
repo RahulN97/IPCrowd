@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="style.css">
+    <title>IP Crowd Pnambic Demo</title>
+    <script src="https://www.gstatic.com/firebasejs/4.12.0/firebase.js"></script>
+    <script>
+      // Initialize Firebase
+      var config = {
+        apiKey: "AIzaSyBEEdVVD1DaQ_bOxhQzXSPdRWrS-goqChc",
+        authDomain: "ipcrowd-a8aea.firebaseapp.com",
+        databaseURL: "https://ipcrowd-a8aea.firebaseio.com",
+        projectId: "ipcrowd-a8aea",
+        storageBucket: "ipcrowd-a8aea.appspot.com",
+        messagingSenderId: "734706257829"
+      };
+      firebase.initializeApp(config);
+    </script>
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
+    <script>
+      function run_script() {
+        var PythonShell = require('python-shell');
+        PythonShell.run('python Images/img_modify.py dog-park.jpg show 1', function (err) {
+          if (err) throw err;
+          console.log('finished');
+        });
+      }
+    </script>
+    <script>
+      function signout() {
+        firebase.auth().signOut();
+        console.log(firebase.auth().currentUser);
+        window.location = 'index.html';
+      }
+      function curr_user() {
+        var usr = 'default';
+        firebase.auth().onAuthStateChanged(function(user) {
+          if (user) {
+            console.log(firebase.auth().currentUser.email);
+            usr = firebase.auth().currentUser.email;
+          } else {
+            console.log('no user');
+          }
+        });
+        return usr;
+      }
+    </script>
+    <script type="text/javascript">
+      function loadQuestion(filePath) {
+        var result = null;
+        var xmlhttp = new XMLHttpRequest();
+        xmlhttp.open("GET", filePath, false);
+        xmlhttp.send();
+        if (xmlhttp.status==200) {
+          result = xmlhttp.responseText;
+        }
+        return result;
+      }
+      function loadPoints(filePath) {
+        var result = null;
+        var xmlhttp = new XMLHttpRequest();
+        xmlhttp.open("GET", filePath, false);
+        xmlhttp.send();
+        if (xmlhttp.status==200) {
+          result = xmlhttp.responseText;
+        }
+        return result;
+      }
+    </script>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link type="text/css" rel="stylesheet" href="annotorious.css" />
+    <script type="text/javascript" src="annotorious.min.js"></script>
+  </head>
+  <body class="homepage" style="margin:10px;padding:5px" onload="handle_data();">
+    <h2 style="margin:0;padding=0">IP Crowd <small>- </small><small><small>PNAMBIC Demo</small></small></h2><br>
+    <div class="container">
+      <h3>Hello <script>document.write(curr_user())</script>!</h3>
+      <h4>Annotate the Image and Answer the Question!</small></h4>
+      <p>Any neccessary image description or instructions should go here.</p>
+      <h5>Your Total Points: <script type=text/javascript>document.write(loadPoints("points.txt"))</script></h5><br>
+      <img src="Images/modified/dog-park.jpg" class="annotatable" width=700/><br><br>
+      <h5>Question: <small><script type="text/javascript">document.write(loadQuestion("question.txt"))</script></small></h5>
+      <form>
+        <input type="text" name="response" id="resp" placeholder="Type Answer Here" size=35><br><br>
+        <input id="submit" type="button" value="Download" onclick="store_data(); store_csv();"/>
+        <input id="submitBtn" type="button" value="Submit" onclick="store_annotations();"/>
+      </form>
+      <input id="signOut" type="button" value="Sign-Out" onclick="signout();"/>
+      <input id="run_script" type="button" value="Run Script" onclick="run_script();"/>
+    </div>
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+    <script src="https://requirejs.org/docs/release/2.2.0/minified/require.js"></script>
+    <script src="main.js"></script>
+  </body>
+</html>

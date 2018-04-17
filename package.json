@@ -1,0 +1,25 @@
+{
+  "name": "ipcrowd",
+  "version": "1.0.0",
+  "description": "## Overview This is a prototype designed to showcase the functionalities and interactions of the different modules involved in a PNAMBIC demo. The web-app uses Bootstrap and jQuery for the front-end framework, and currently uses python scripts to simulate any back-end operations. The following instructions and guide only apply for the version of the app that will be used in the modular demo.",
+  "main": "main.js",
+  "dependencies": {
+    "bootstrap": "^4.0.0",
+    "jquery": "^3.3.1",
+    "live-server": "^1.2.0",
+    "popper.js": "^1.14.1"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.gatech.edu/rnambiar8/IPCrowd.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "engines": {
+    "node": "8.9.4"
+  }
+}

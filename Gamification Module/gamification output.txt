@@ -1,0 +1,335 @@
+
+C:\Users\shahs\Desktop\Spring18\VIP\IPCrowd>python points.py
+Current questions are:
+
+Enter new observation or question: question - is this space related?
+(User will see)Total points: 0
+(User won't see)Ghost points: 1
+==============================================================
+Current questions are:
+
+        1. is this space related?
+                Responses: 0    Validated: No
+Enter new observation or question: question - what is this symbol?
+(User will see)Total points: 0
+(User won't see)Ghost points: 2
+==============================================================
+Current questions are:
+
+        1. is this space related?
+                Responses: 0    Validated: No
+        2. what is this symbol?
+                Responses: 0    Validated: No
+Enter new observation or question: comment - this leads me to believe it is space related
+(User will see)Total points: 1
+(User won't see)Ghost points: 2
+==============================================================
+Current questions are:
+
+        1. is this space related?
+                Responses: 0    Validated: No
+        2. what is this symbol?
+                Responses: 0    Validated: No
+Enter new observation or question: comment - maybe this is 50s or 60s
+(User will see)Total points: 2
+(User won't see)Ghost points: 2
+==============================================================
+Current questions are:
+
+        1. is this space related?
+                Responses: 0    Validated: No
+        2. what is this symbol?
+                Responses: 0    Validated: No
+Enter new observation or question: question - what time period
+(User will see)Total points: 2
+(User won't see)Ghost points: 3
+==============================================================
+Current questions are:
+
+        1. is this space related?
+                Responses: 0    Validated: No
+        2. what is this symbol?
+                Responses: 0    Validated: No
+        3. what time period
+                Responses: 0    Validated: No
+Enter new observation or question: comment - <answer for cognitive bias question>
+(User will see)Total points: 3
+(User won't see)Ghost points: 3
+==============================================================
+Current questions are:
+
+        1. is this space related?
+                Responses: 0    Validated: No
+        2. what is this symbol?
+                Responses: 0    Validated: No
+        3. what time period
+                Responses: 0    Validated: No
+Enter new observation or question: question - what is the mess of wires
+(User will see)Total points: 3
+(User won't see)Ghost points: 4
+==============================================================
+Current questions are:
+
+        1. is this space related?
+                Responses: 0    Validated: No
+        2. what is this symbol?
+                Responses: 0    Validated: No
+        3. what time period
+                Responses: 0    Validated: No
+        4. what is the mess of wires
+                Responses: 0    Validated: No
+Enter new observation or question: question -what is this cube/box
+(User will see)Total points: 3
+(User won't see)Ghost points: 5
+==============================================================
+Current questions are:
+
+        1. is this space related?
+                Responses: 0    Validated: No
+        2. what is this symbol?
+                Responses: 0    Validated: No
+        3. what time period
+                Responses: 0    Validated: No
+        4. what is the mess of wires
+                Responses: 0    Validated: No
+        5. what is this cube/box
+                Responses: 0    Validated: No
+Enter new observation or question: comment - mission control room
+(User will see)Total points: 4
+(User won't see)Ghost points: 5
+==============================================================
+Current questions are:
+
+        1. is this space related?
+                Responses: 0    Validated: No
+        2. what is this symbol?
+                Responses: 0    Validated: No
+        3. what time period
+                Responses: 0    Validated: No
+        4. what is the mess of wires
+                Responses: 0    Validated: No
+        5. what is this cube/box
+                Responses: 0    Validated: No
+Enter new observation or question: comment - 10% confidence they are space muffins
+(User will see)Total points: 5
+(User won't see)Ghost points: 5
+==============================================================
+Current questions are:
+
+        1. is this space related?
+                Responses: 0    Validated: No
+        2. what is this symbol?
+                Responses: 0    Validated: No
+        3. what time period
+                Responses: 0    Validated: No
+        4. what is the mess of wires
+                Responses: 0    Validated: No
+        5. what is this cube/box
+                Responses: 0    Validated: No
+Enter new observation or question: answer2 - conrad gordon
+(User will see)Total points: 6
+(User won't see)Ghost points: 5
+==============================================================
+Current questions are:
+
+        1. is this space related?
+                Responses: 0    Validated: No
+        2. what is this symbol?
+                Responses: 1    Validated: No
+        3. what time period
+                Responses: 0    Validated: No
+        4. what is the mess of wires
+                Responses: 0    Validated: No
+        5. what is this cube/box
+                Responses: 0    Validated: No
+Enter new observation or question: question - is this a school ring
+(User will see)Total points: 6
+(User won't see)Ghost points: 6
+==============================================================
+Current questions are:
+
+        1. is this space related?
+                Responses: 0    Validated: No
+        2. what is this symbol?
+                Responses: 1    Validated: No
+        3. what time period
+                Responses: 0    Validated: No
+        4. what is the mess of wires
+                Responses: 0    Validated: No
+        5. what is this cube/box
+                Responses: 0    Validated: No
+        6. is this a school ring
+                Responses: 0    Validated: No
+Enter new observation or question: answer2 - borman level
+(User will see)Total points: 7
+(User won't see)Ghost points: 6
+==============================================================
+Current questions are:
+
+        1. is this space related?
+                Responses: 0    Validated: No
+        2. what is this symbol?
+                Responses: 2    Validated: No
+        3. what time period
+                Responses: 0    Validated: No
+        4. what is the mess of wires
+                Responses: 0    Validated: No
+        5. what is this cube/box
+                Responses: 0    Validated: No
+        6. is this a school ring
+                Responses: 0    Validated: No
+Enter new observation or question: answer2- borman lovett anders
+(User will see)Total points: 8
+(User won't see)Ghost points: 6
+==============================================================
+Current questions are:
+
+        1. is this space related?
+                Responses: 0    Validated: No
+        2. what is this symbol?
+                Responses: 3    Validated: No
+        3. what time period
+                Responses: 0    Validated: No
+        4. what is the mess of wires
+                Responses: 0    Validated: No
+        5. what is this cube/box
+                Responses: 0    Validated: No
+        6. is this a school ring
+                Responses: 0    Validated: No
+Enter new observation or question: comment - scotch tape
+(User will see)Total points: 9
+(User won't see)Ghost points: 6
+==============================================================
+Current questions are:
+
+        1. is this space related?
+                Responses: 0    Validated: No
+        2. what is this symbol?
+                Responses: 3    Validated: No
+        3. what time period
+                Responses: 0    Validated: No
+        4. what is the mess of wires
+                Responses: 0    Validated: No
+        5. what is this cube/box
+                Responses: 0    Validated: No
+        6. is this a school ring
+                Responses: 0    Validated: No
+Enter new observation or question: comment - maybe 70s
+(User will see)Total points: 10
+(User won't see)Ghost points: 6
+==============================================================
+Current questions are:
+
+        1. is this space related?
+                Responses: 0    Validated: No
+        2. what is this symbol?
+                Responses: 3    Validated: No
+        3. what time period
+                Responses: 0    Validated: No
+        4. what is the mess of wires
+                Responses: 0    Validated: No
+        5. what is this cube/box
+                Responses: 0    Validated: No
+        6. is this a school ring
+                Responses: 0    Validated: No
+Enter new observation or question: answer3 - symobls make it seem like they're doing the apollo space program in 60s-70s
+(User will see)Total points: 11
+(User won't see)Ghost points: 6
+==============================================================
+Current questions are:
+
+        1. is this space related?
+                Responses: 0    Validated: No
+        2. what is this symbol?
+                Responses: 3    Validated: No
+        3. what time period
+                Responses: 1    Validated: No
+        4. what is the mess of wires
+                Responses: 0    Validated: No
+        5. what is this cube/box
+                Responses: 0    Validated: No
+        6. is this a school ring
+                Responses: 0    Validated: No
+Enter new observation or question: question - what went wrong on apollo 13
+(User will see)Total points: 11
+(User won't see)Ghost points: 7
+==============================================================
+Current questions are:
+
+        1. is this space related?
+                Responses: 0    Validated: No
+        2. what is this symbol?
+                Responses: 3    Validated: No
+        3. what time period
+                Responses: 1    Validated: No
+        4. what is the mess of wires
+                Responses: 0    Validated: No
+        5. what is this cube/box
+                Responses: 0    Validated: No
+        6. is this a school ring
+                Responses: 0    Validated: No
+        7. what went wrong on apollo 13
+                Responses: 0    Validated: No
+Enter new observation or question: answer7 - this machine is potentially used to fix the failure of the apollo 13
+(User will see)Total points: 12
+(User won't see)Ghost points: 7
+==============================================================
+Current questions are:
+
+        1. is this space related?
+                Responses: 0    Validated: No
+        2. what is this symbol?
+                Responses: 3    Validated: No
+        3. what time period
+                Responses: 1    Validated: No
+        4. what is the mess of wires
+                Responses: 0    Validated: No
+        5. what is this cube/box
+                Responses: 0    Validated: No
+        6. is this a school ring
+                Responses: 0    Validated: No
+        7. what went wrong on apollo 13
+                Responses: 1    Validated: No
+Enter new observation or question: comment - they're trying to fix something on apollo 13
+(User will see)Total points: 13
+(User won't see)Ghost points: 7
+==============================================================
+Current questions are:
+
+        1. is this space related?
+                Responses: 0    Validated: No
+        2. what is this symbol?
+                Responses: 3    Validated: No
+        3. what time period
+                Responses: 1    Validated: No
+        4. what is the mess of wires
+                Responses: 0    Validated: No
+        5. what is this cube/box
+                Responses: 0    Validated: No
+        6. is this a school ring
+                Responses: 0    Validated: No
+        7. what went wrong on apollo 13
+                Responses: 1    Validated: No
+Enter new observation or question: comment - google told me they're rigging something to create a filter to fit something that isn't supposed to be fit there
+(User will see)Total points: 14
+(User won't see)Ghost points: 7
+==============================================================
+Current questions are:
+
+        1. is this space related?
+                Responses: 0    Validated: No
+        2. what is this symbol?
+                Responses: 3    Validated: No
+        3. what time period
+                Responses: 1    Validated: No
+        4. what is the mess of wires
+                Responses: 0    Validated: No
+        5. what is this cube/box
+                Responses: 0    Validated: No
+        6. is this a school ring
+                Responses: 0    Validated: No
+        7. what went wrong on apollo 13
+                Responses: 1    Validated: No
+Enter new observation or question: done
+
+C:\Users\shahs\Desktop\Spring18\VIP\IPCrowd>

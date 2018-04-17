@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="style.css">
+    <script src="https://www.gstatic.com/firebasejs/4.12.0/firebase.js"></script>
+    <script>
+      // Initialize Firebase
+      var config = {
+        apiKey: "AIzaSyBEEdVVD1DaQ_bOxhQzXSPdRWrS-goqChc",
+        authDomain: "ipcrowd-a8aea.firebaseapp.com",
+        databaseURL: "https://ipcrowd-a8aea.firebaseio.com",
+        projectId: "ipcrowd-a8aea",
+        storageBucket: "ipcrowd-a8aea.appspot.com",
+        messagingSenderId: "734706257829"
+      };
+      firebase.initializeApp(config);
+    </script>
+    <script>
+      function load_home() {
+        var email = document.getElementById("email").value;
+        var pass = document.getElementById("pass").value;
+        firebase.auth().signInWithEmailAndPassword(email, pass).catch(function(error) {
+          var errorCode = error.code;
+          var errorMessage = error.message;
+          if (errorCode === 'auth/wrong-password') {
+            alert('Wrong password.');
+          } else {
+            alert(errorMessage);
+          }
+          console.log(error);
+        });
+
+        firebase.auth().onAuthStateChanged(firebaseUser => {
+          if (firebaseUser.email.split('@')[0] == 'admin') {
+            console.log("admin trying to log in");
+            //firebase.auth().signOut();
+            window.location = 'admin.html';
+          } else if (firebaseUser != null) {
+            window.location = 'home.html';
+          } else {
+            console.log("no user logged in");
+          }
+        });
+      }
+      function create_user() {
+        var email = document.getElementById("email").value;
+        var pass = document.getElementById("pass").value;
+        var confirm_pass = document.getElementById("confirm_pass").value;
+        if (pass == confirm_pass) {
+          firebase.auth().createUserWithEmailAndPassword(email, pass).catch(function(error) {
+            var errorCode = error.code;
+            var errorMessage = error.message;
+            alert(errorMessage);
+            console.log(error);
+          });
+          firebase.auth().onAuthStateChanged(firebaseUser => {
+            if (firebaseUser) {
+              alert('Created account');
+              window.location = 'home.html';
+            } else {
+              console.log("no user logged in");
+            }
+          });
+        }
+      }
+    </script>
+  </head>
+  <body class="index">
+    <div class="signinBox">
+			<img src="user.png" class="user">
+			<h2>Welcome to the Demo!</h2>
+      <p>Name</p>
+      <input id="name" type="text" placeholder="George P Burdell" size=20>
+			<p>Email</p>
+			<input id="email" type="text" placeholder="gpburdell3@gatech.edu" size=20>
+			<p>Password</p>
+			<input id="pass" type="password" placeholder="••••••••" size=20>
+      <p>Confirm Password</p>
+			<input id="confirm_pass" type="password" placeholder="••••••••" size=20>
+      <input id="signup" type="submit" value="Confirm Sign-Up" onclick="create_user(); load_home();"/>
+      <a href="index.html">Return to Log-In</a>
+		</div>
+    <script src="http://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+    <script src="http://requirejs.org/docs/release/2.2.0/minified/require.js"></script>
+    <script src="main.js"></script>
+  </body>
+</html>
