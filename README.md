@@ -76,3 +76,4 @@ Since we haven't set up a database yet, information will stored on the server-si
 3. The Platform/UI component will read question.txt and points.txt to display the new question and user points respectively. The img_modify.py script will have automatically updated the localhost with the appropriate image.
 4. The user will either repeat step 1 or the process will have terminated (decided by cog. sci. module).
         
+# IPCrowd
